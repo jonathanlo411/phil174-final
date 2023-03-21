@@ -11,9 +11,35 @@
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script defer src="app.js"></script>
-    <title>Bofa Bros - DataHacks 2022</title>
+    <title>Jonathan Lo - PHIL 174 Final Project</title>
 </head>
 <body>
+    <!-- Trigger/Open The Modal --><!-- Trigger/Open The Modal -->
+    <button id="myBtn" style="background-color: black;"></button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h1>Which view will you use?</h1>
+            <div class="views">
+                <div class="modal-option" id="vert-opt">
+                    <h3>Vertical</h3>
+                    <p>For easy reading</p>
+                    <img src="data/vertical.png" />
+                </div>
+                <div class="modal-option" id="page-opt">
+                    <h3>Pages</h3>
+                    <p>For sectioned pages</p>
+                    <img src="data/pages.png" />
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
     <h1 id="title">PHIL174 - Final Project</h1>
     <div id="body-page">
     <div id="back-white">
@@ -126,6 +152,10 @@
         <div class="sidebar-content" id="fut">
             <span class="material-symbols-outlined">warning</span>
             <h2>Cases for Revision</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='intro.html'">
+            <span class="material-symbols-outlined">layers</span>
+            <h2>Swap to Pages View</h2>
         </div>
     </div>
 </body>

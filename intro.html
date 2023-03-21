@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data/favicon.svg">
+    <link rel="icon" type="image/png" href="data/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script defer src="pages.js"></script>
+    <title>Jonathan Lo - PHIL 174 Final Project</title>
+</head>
+<body>
+    <h1 id="title">PHIL174 - Final Project</h1>
+    <div id="body-page">
+    <div id="back-white">
+    <div id="center">
+        
+        <h2 id="process-title">A Data Science Approach towards Healthcare</h2>
+        
+        <!-- Team Section -->
+        <div id="team">
+            <div id="member-list">
+                <div class="member" style="--animation-order: 1;" onclick="location.href = 'https://www.linkedin.com/in/jonathanlo411/'">
+                    <div class="pfp-wrapper">
+                        <img src="data/pfp.jpg" />
+                    </div>
+                    <h4 class="member-name">Jonathan Lo</h4>
+                    <h6 class="member-desc">Data Science</h6>
+                </div>
+        </div>
+        
+        <!-- Process Section -->
+        <div id="process">
+            <div class="step" id="sec0">
+                <h3 class="heading">0. Introduction</h3>
+                <p>The search for a panacea, a cure-all that can heal any disease or ailment, has spanned as far as the length of human civilization. Although in the modern day, we understand that existence of a panacea isn’t very realistic, we still strive towards that ideal for perfect healthiness that encompasses all aspects of physical and mental well-being. One of the obstacles faced is that humans have often died from illnesses because they were not caught in time. This could have been caused by missing early signs of cancer, failing to sign up for a yearly checkup, or ignoring current problems that can lead to worse consequences. Oftentimes, people notice the symptoms and the issue resolves itself. However, in the cases where they do not, they can be fatal. The first step towards that ideal of a panacea is identifying all diseases accurately and quickly so that treatment can be done as soon as possible and prevent further complications or death.<br><br>
+                The core Data Science challenge here is to provide a way for common people to see if their symptoms have potential to develop into a much worse fate. To this end, we propose the development and use of a machine learning model that identifies diseases given a certain set of parameters such as age, gender, medical history, lifestyle factors, etc. By using a machine learning model for disease identification, we can leverage the power of data and algorithms to analyze patterns and make predictions based on large databases of medical information. Machine learning models can also learn from new data and feedback and improve their performance over time. This way, we can respond to certain illnesses that would be fatal if left untreated quicker than relying on human judgment alone, increasing human lifespan in the process. Machine learning models can also help diagnose rare or complex diseases that may be difficult for human doctors to identify. Moreover, machine learning models can provide more accessible and affordable healthcare services to people who may not have easy access to medical facilities or professionals.
+                </p>
+            </div>
+        </div>   
+
+    </div>
+    </div>
+
+    <div id="footer-spacer"></div>
+    <footer>
+        <h5>Jonathan Lo, PHIL 174: Data Ethics</h5>
+    </footer>
+    </div>
+
+    <!-- Side Nav -->
+    <div class="sidebar" id="side-nav">
+        <div class="sidebar-content" id="int" onclick="window.location.href='intro.html'">
+            <span class="material-symbols-outlined">info</span>
+            <h2>Introduction</h2>
+        </div>
+        <div class="sidebar-content" id="dat" onclick="window.location.href='data.html'">
+            <span class="material-symbols-outlined">database</span>
+            <h2>Data Collection</h2>
+        </div>
+        <div class="sidebar-content" id="vis" onclick="window.location.href='analyzing.html'">
+            <span class="material-symbols-outlined">monitoring</span>
+            <h2>Analyzing and Modeling</h2>
+        </div>
+        <div class="sidebar-content" id="ana" onclick="window.location.href='results.html'">
+            <span class="material-symbols-outlined">query_stats</span>
+            <h2>Understanding the Model Results</h2>
+        </div>
+        <div class="sidebar-content" id="con" onclick="window.location.href='justice.html'">
+            <span class="material-symbols-outlined">balance</span>
+            <h2>Increased Justice</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='revision.html'">
+            <span class="material-symbols-outlined">warning</span>
+            <h2>Cases for Revision</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='index.html'">
+            <span class="material-symbols-outlined">swap_vert</span>
+            <h2>Switch to Vertical View</h2>
+        </div>
+    </div>
+</body>
+</html>

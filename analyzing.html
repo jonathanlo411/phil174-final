@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data/favicon.svg">
+    <link rel="icon" type="image/png" href="data/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script defer src="pages.js"></script>
+    <title>Jonathan Lo - PHIL 174 Final Project</title>
+</head>
+<body>
+    <h1 id="title">PHIL174 - Final Project</h1>
+    <div id="body-page">
+    <div id="back-white">
+    <div id="center">
+        
+        <h2 id="process-title">A Data Science Approach towards Healthcare</h2>
+        
+        <!-- Team Section -->
+        <div id="team">
+            <div id="member-list">
+                <div class="member" style="--animation-order: 1;" onclick="location.href = 'https://www.linkedin.com/in/jonathanlo411/'">
+                    <div class="pfp-wrapper">
+                        <img src="data/pfp.jpg" />
+                    </div>
+                    <h4 class="member-name">Jonathan Lo</h4>
+                    <h6 class="member-desc">Data Science</h6>
+                </div>
+        </div>
+        
+        <!-- Process Section -->
+        <div id="process">
+            <div class="step" id="sec2">
+                <h3 class="heading">2. Analyzing and Modeling</h3>
+                <p>Before modeling, it is important to see if there are any trends or biases inside the data. To do this, we will have data scientists perform exploratory data analysis to find any trends that may affect the model. To ensure that ethical data science is being performed, all analysis must be readable. However, the work will be confidential due to the nature of the data. The model that we will be using is a random forest classifier. This allows the model’s process to be more apparent. In the case where miss prediction occurs, machine learning engineers will be able to adjust parameters to prevent those mistakes from occurring again. An example of the architecture can be seen below</p>
+                <div class="img-wrapper"><img src="data/fig3.png" /></div>
+                <p>	A potential issue that might arise during the analysis phase is the identifying data that is in the dataset. If fallen into the wrong hands, it can lead to a variety of issues, including identity theft. To ensure privacy, there is a two layered approach. The first is that all identifying information like address, social security number, name, etc. will be stripped from the dataset. This gets rid of any explicit identifying features. However, data like age, sex, ethnicity are critical information that can still be identified if someone is able to connect all the dots. This data is extremely important and is a core component of the prediction. For a model based around the health of the user, this can not be removed. To compromise, only authorized users will be allowed to work with the data. Authorized users will need to sign non disclosure and confidentiality agreements to prevent such data from being leaked.<br><br>
+                    An issue that might arise during the modeling phase is concern over transparency. Patients and stakeholders do not want to see a new black box make claims concerning their health. To assuage those fears, we specifically select a random forest classifier due to the transparent nature of the model. This ensures that stakeholders can see how that decision was reached and what parameters were involved. This model also works well with privacy issues due to the nature of how data is fed into the inputs of the random forest.
+                </p>
+            </div>
+        </div>   
+
+    </div>
+    </div>
+
+    <div id="footer-spacer"></div>
+    <footer>
+        <h5>Jonathan Lo, PHIL 174: Data Ethics</h5>
+    </footer>
+    </div>
+
+    <!-- Side Nav -->
+    <div class="sidebar" id="side-nav">
+        <div class="sidebar-content" id="int" onclick="window.location.href='intro.html'">
+            <span class="material-symbols-outlined">info</span>
+            <h2>Introduction</h2>
+        </div>
+        <div class="sidebar-content" id="dat" onclick="window.location.href='data.html'">
+            <span class="material-symbols-outlined">database</span>
+            <h2>Data Collection</h2>
+        </div>
+        <div class="sidebar-content" id="vis" onclick="window.location.href='analyzing.html'">
+            <span class="material-symbols-outlined">monitoring</span>
+            <h2>Analyzing and Modeling</h2>
+        </div>
+        <div class="sidebar-content" id="ana" onclick="window.location.href='results.html'">
+            <span class="material-symbols-outlined">query_stats</span>
+            <h2>Understanding the Model Results</h2>
+        </div>
+        <div class="sidebar-content" id="con" onclick="window.location.href='justice.html'">
+            <span class="material-symbols-outlined">balance</span>
+            <h2>Increased Justice</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='revision.html'">
+            <span class="material-symbols-outlined">warning</span>
+            <h2>Cases for Revision</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='index.html'">
+            <span class="material-symbols-outlined">swap_vert</span>
+            <h2>Switch to Vertical View</h2>
+        </div>
+    </div>
+</body>
+</html>

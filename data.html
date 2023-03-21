@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data/favicon.svg">
+    <link rel="icon" type="image/png" href="data/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script defer src="pages.js"></script>
+    <title>Jonathan Lo - PHIL 174 Final Project</title>
+</head>
+<body>
+    <h1 id="title">PHIL174 - Final Project</h1>
+    <div id="body-page">
+    <div id="back-white">
+    <div id="center">
+        
+        <h2 id="process-title">A Data Science Approach towards Healthcare</h2>
+        
+        <!-- Team Section -->
+        <div id="team">
+            <div id="member-list">
+                <div class="member" style="--animation-order: 1;" onclick="location.href = 'https://www.linkedin.com/in/jonathanlo411/'">
+                    <div class="pfp-wrapper">
+                        <img src="data/pfp.jpg" />
+                    </div>
+                    <h4 class="member-name">Jonathan Lo</h4>
+                    <h6 class="member-desc">Data Science</h6>
+                </div>
+        </div>
+        
+        <!-- Process Section -->
+        <div id="process">
+            <div class="step" id="sec1">
+                <h3 class="heading">1. Data Collection</h3>
+                <p>In order to achieve a working model that can present an accurate prediction, clear and objective data needs to be collected. Important metrics include demographic information, medical history, as well as lifestyle factors. Of these, demographic information and medical history provide a solid foundation of objective data. However, data regarding lifestyle factors is hard to quantify. A questionnaire fulfills the necessary factors in order to ensure that data regarding lifestyle factors is quantifiable and is easy to process. In regards to the questions that will be used, a panel will be put together. This panel will consist of medical experts and researchers from all domains of healthcare. Although a critical part, they will not solely be involved in the making of the questions. An overview of the data breakdown can be seen in below.
+                </p>
+                <div class="img-wrapper"><img src="data/fig1.png" /></div>
+                <p>
+                    The data will be sourced from current patient records and the ailments they have. This provides us with a solid foundation of training data. This allows us to obtain demographic information and medical history easily using data stored in hospital databases. To gather data regarding lifestyle factors, we will send the patient the questionnaire or have the doctor give them to the patient on their next visit. In the case the patient has passed away, the questionnaire will be given to the patient’s family. If the questionnaire is not filled out or the patient's family declines to provide it, the patient’s data will be removed from the model training data. In addition to this preexisting data, we will want to continuously iterate the model so it is always up to date.<br><br>
+                    To do so, we will continue to collect medical data and lifestyle data from patients.
+                    The data will be collected from hospitals within the United States as that represents the demographic of the model the best. As such, the data collection process requires the cooperation of a large part of the healthcare sector which becomes difficult to handle. To manage this, the medical experts from the questionnaire panel will be traveling to hospitals where data collection is taking place to ensure that the process is ethical. The main people that will be collecting data will be the nurses and doctors that are in charge of the patients. A high level view of the collection process is seen in the following image.
+                </p>
+                <div class="img-wrapper"><img src="data/fig2.png" /></div>
+                <p>
+                    This approach is not without issues however. The largest one, the consent of patients, is important to resolve. Not only is this a HIPAA violation, it is important for participants and patients to be informed about the project. In order to obtain baseline data, we will be working with HIPAA-compliant healthcare institutions that already follow these procedures and guidelines. To further ensure patient consent, we will be informing all patients about the details regarding the project as well as the option to easily withdraw their information from the data that will be used to train the model. Any one who requests the data be withdrawn through the form will be allowed to do so without any extra hassle. In the case of patients that have passed away, the patient's family will have the option to do so. <br><br>
+	Another issue to be wary of is the potential for discrimination under the data. This can bias the model to believe a certain classification of disease is applicable to the situation based on the potential patient's demographic but is not necessarily true. Similarly, a more technical issue is the preexisting bias found in the diagnosis of patients. Doctors do not always give the correct diagnosis which is a cause for concern. This is especially true for less known diseases. To mitigate both of these concerns, we will increase sampling and ensure distributions of each case remain approximately the same. In addition, the size of bias in the less known diseases should remain low due to the information received from the sample size.
+
+                </p>
+            </div>
+        </div>   
+
+    </div>
+    </div>
+
+    <div id="footer-spacer"></div>
+    <footer>
+        <h5>Jonathan Lo, PHIL 174: Data Ethics</h5>
+    </footer>
+    </div>
+
+    <!-- Side Nav -->
+    <div class="sidebar" id="side-nav">
+        <div class="sidebar-content" id="int" onclick="window.location.href='intro.html'">
+            <span class="material-symbols-outlined">info</span>
+            <h2>Introduction</h2>
+        </div>
+        <div class="sidebar-content" id="dat" onclick="window.location.href='data.html'">
+            <span class="material-symbols-outlined">database</span>
+            <h2>Data Collection</h2>
+        </div>
+        <div class="sidebar-content" id="vis" onclick="window.location.href='analyzing.html'">
+            <span class="material-symbols-outlined">monitoring</span>
+            <h2>Analyzing and Modeling</h2>
+        </div>
+        <div class="sidebar-content" id="ana" onclick="window.location.href='results.html'">
+            <span class="material-symbols-outlined">query_stats</span>
+            <h2>Understanding the Model Results</h2>
+        </div>
+        <div class="sidebar-content" id="con" onclick="window.location.href='justice.html'">
+            <span class="material-symbols-outlined">balance</span>
+            <h2>Increased Justice</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='revision.html'">
+            <span class="material-symbols-outlined">warning</span>
+            <h2>Cases for Revision</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='index.html'">
+            <span class="material-symbols-outlined">swap_vert</span>
+            <h2>Switch to Vertical View</h2>
+        </div>
+    </div>
+</body>
+</html>

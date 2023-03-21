@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data/favicon.svg">
+    <link rel="icon" type="image/png" href="data/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script defer src="pages.js"></script>
+    <title>Jonathan Lo - PHIL 174 Final Project</title>
+</head>
+<body>
+    <h1 id="title">PHIL174 - Final Project</h1>
+    <div id="body-page">
+    <div id="back-white">
+    <div id="center">
+        
+        <h2 id="process-title">A Data Science Approach towards Healthcare</h2>
+        
+        <!-- Team Section -->
+        <div id="team">
+            <div id="member-list">
+                <div class="member" style="--animation-order: 1;" onclick="location.href = 'https://www.linkedin.com/in/jonathanlo411/'">
+                    <div class="pfp-wrapper">
+                        <img src="data/pfp.jpg" />
+                    </div>
+                    <h4 class="member-name">Jonathan Lo</h4>
+                    <h6 class="member-desc">Data Science</h6>
+                </div>
+        </div>
+        
+        <!-- Process Section -->
+        <div id="process">
+            <div class="step" id="sec3">
+                <h3 class="heading">3. Understanding the Model Results</h3>
+                <p>The main goal that we aim to achieve through this data science project is to be able to notify people if there is potential for their symptoms to develop into something much worse. To do so, the model is specialized around outputting the diseases or illness that best matches the situation. However, the model is limited by the fact that it is just a model. It does not replace the need for a doctor. The model outputs should not be treated as a diagnosis and those that use the model should not base their treatment on such decisions. To uphold this message, we will always remind the user that consulting a trained professional is always the best option.<br><br>
+                    One way that the model can be used is by serving as a source of advice. Users of the model can input their symptoms and get a possible diagnosis from the model. Then, they can share these results with a medical professional who can evaluate them further. The doctor can use that information to confirm or challenge their own judgment and make a more informed decision about the best course of treatment. The model can thus act as a helpful tool that offers another perspective on what might be wrong with the patient’s health.
+                    The model will output a table that contains all the information necessary to make a reasonable decision. The format will have two columns: ailment and confidence. The first column, ailment, will contain a list of potential ailments that the model believes best matches the situation. The second column, confidence, contains a float between 0 and 1 which represents the confidence level of that prediction. The table is sorted from largest to smallest confidence levels. To interpret the results, if prediction in the first result is flagged as severe and the confidence level is greater than 0.8, then the application notifies the user to seek medical consultation. For example, the user would be notified that they likely have Pneumonia and to seek medical help in the data returned from the table shown below.
+                </p>
+                <div class="img-wrapper"><img src="data/fig4.png" /></div>
+            </div>
+        </div>   
+
+    </div>
+    </div>
+
+    <div id="footer-spacer"></div>
+    <footer>
+        <h5>Jonathan Lo, PHIL 174: Data Ethics</h5>
+    </footer>
+    </div>
+
+    <!-- Side Nav -->
+    <div class="sidebar" id="side-nav">
+        <div class="sidebar-content" id="int" onclick="window.location.href='intro.html'">
+            <span class="material-symbols-outlined">info</span>
+            <h2>Introduction</h2>
+        </div>
+        <div class="sidebar-content" id="dat" onclick="window.location.href='data.html'">
+            <span class="material-symbols-outlined">database</span>
+            <h2>Data Collection</h2>
+        </div>
+        <div class="sidebar-content" id="vis" onclick="window.location.href='analyzing.html'">
+            <span class="material-symbols-outlined">monitoring</span>
+            <h2>Analyzing and Modeling</h2>
+        </div>
+        <div class="sidebar-content" id="ana" onclick="window.location.href='results.html'">
+            <span class="material-symbols-outlined">query_stats</span>
+            <h2>Understanding the Model Results</h2>
+        </div>
+        <div class="sidebar-content" id="con" onclick="window.location.href='justice.html'">
+            <span class="material-symbols-outlined">balance</span>
+            <h2>Increased Justice</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='revision.html'">
+            <span class="material-symbols-outlined">warning</span>
+            <h2>Cases for Revision</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='index.html'">
+            <span class="material-symbols-outlined">swap_vert</span>
+            <h2>Switch to Vertical View</h2>
+        </div>
+    </div>
+</body>
+</html>

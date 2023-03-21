@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data/favicon.svg">
+    <link rel="icon" type="image/png" href="data/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script defer src="pages.js"></script>
+    <title>Jonathan Lo - PHIL 174 Final Project</title>
+</head>
+<body>
+    <h1 id="title">PHIL174 - Final Project</h1>
+    <div id="body-page">
+    <div id="back-white">
+    <div id="center">
+        
+        <h2 id="process-title">A Data Science Approach towards Healthcare</h2>
+        
+        <!-- Team Section -->
+        <div id="team">
+            <div id="member-list">
+                <div class="member" style="--animation-order: 1;" onclick="location.href = 'https://www.linkedin.com/in/jonathanlo411/'">
+                    <div class="pfp-wrapper">
+                        <img src="data/pfp.jpg" />
+                    </div>
+                    <h4 class="member-name">Jonathan Lo</h4>
+                    <h6 class="member-desc">Data Science</h6>
+                </div>
+        </div>
+        
+        <!-- Process Section -->
+        <div id="process">
+            
+            <div class="step" id="sec5">
+                <h3 class="heading">5. Cases for Revision</h3>
+                <p>There are two main cases for the model to be revised: discrimination and accuracy. As mentioned in the previous section, one of the strong points of the model is that it provides those that are disadvantaged access to health information that they may otherwise lack. However, if the predictions are discriminatory, it conflicts with the justice that was initially provided by the model. In this case there would be a probable cause for the model to be updated or to retire it. An example of this occurring is if the model predicts a higher risk of diabetes for African Americans than Caucasians with similar symptoms. This would indicate that the lost function in the random forest needs to be updated.<br><br>
+                    The other case, accuracy, is another reason why the model should be updated. As with all models, if accuracy falls below a certain threshold,  they need to be updated with new data or algorithms to improve their performance. However, the issue is doubly so for this model. This is because the model may provide a false sense of security by claiming that the ailments will not result in a worse outcome when in reality it could. A case of this occurring is that the model may predict that a user who has a fever and cough has a common cold while in reality they have pneumonia. This could lead the user delaying seeing a medical professional or taking an incorrect medication. This would eventually worsen their condition and put their life at risk.<br><br>
+                    In the case that a model is flagged for discrimination or inaccuracy, a team of machine learning engineers and an institutional review board (IRB) will review whether the flag was correct or not. They will examine the data, the algorithm, and the output of the model to determine if there was any bias or error involved. If it was incorrect, meaning that the model did not violate any ethical or legal standards, there is no intervention and the model will continue to run as usual. However, if it was correct, meaning that the model did discriminate against certain groups or make inaccurate predictions or decisions, there would be an investigation into how the error occurred within the model. The team will identify the source and cause of the problem and propose possible solutions to fix it. After issues are discovered and resolved, the model loss function will be tuned to optimize its performance and reduce its bias or error rate. The loss function is a mathematical formula that measures how well the model fits the data and penalizes it for making wrong predictions or decisions. The model will then undergo testing once again using new data or cross-validation techniques to evaluate its accuracy and fairness. If tests pass, meaning that the model meets the desired criteria and standards, it will be redeployed for production and used by healthcare providers or patients. If tests fail, meaning that the model still has some issues or problems that need to be addressed, it will be revised further until it passes. The entire process can be seen in the flow chart below.
+                    
+                    </p>
+                <div class="img-wrapper"><img src="data/fig6.png" /></div>
+            </div>
+        </div>   
+
+    </div>
+    </div>
+
+    <div id="footer-spacer"></div>
+    <footer>
+        <h5>Jonathan Lo, PHIL 174: Data Ethics</h5>
+    </footer>
+    </div>
+
+    <!-- Side Nav -->
+    <div class="sidebar" id="side-nav">
+        <div class="sidebar-content" id="int" onclick="window.location.href='intro.html'">
+            <span class="material-symbols-outlined">info</span>
+            <h2>Introduction</h2>
+        </div>
+        <div class="sidebar-content" id="dat" onclick="window.location.href='data.html'">
+            <span class="material-symbols-outlined">database</span>
+            <h2>Data Collection</h2>
+        </div>
+        <div class="sidebar-content" id="vis" onclick="window.location.href='analyzing.html'">
+            <span class="material-symbols-outlined">monitoring</span>
+            <h2>Analyzing and Modeling</h2>
+        </div>
+        <div class="sidebar-content" id="ana" onclick="window.location.href='results.html'">
+            <span class="material-symbols-outlined">query_stats</span>
+            <h2>Understanding the Model Results</h2>
+        </div>
+        <div class="sidebar-content" id="con" onclick="window.location.href='justice.html'">
+            <span class="material-symbols-outlined">balance</span>
+            <h2>Increased Justice</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='revision.html'">
+            <span class="material-symbols-outlined">warning</span>
+            <h2>Cases for Revision</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='index.html'">
+            <span class="material-symbols-outlined">swap_vert</span>
+            <h2>Switch to Vertical View</h2>
+        </div>
+    </div>
+</body>
+</html>

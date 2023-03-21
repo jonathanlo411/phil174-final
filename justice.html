@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data/favicon.svg">
+    <link rel="icon" type="image/png" href="data/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script defer src="pages.js"></script>
+    <title>Jonathan Lo - PHIL 174 Final Project</title>
+</head>
+<body>
+    <h1 id="title">PHIL174 - Final Project</h1>
+    <div id="body-page">
+    <div id="back-white">
+    <div id="center">
+        
+        <h2 id="process-title">A Data Science Approach towards Healthcare</h2>
+        
+        <!-- Team Section -->
+        <div id="team">
+            <div id="member-list">
+                <div class="member" style="--animation-order: 1;" onclick="location.href = 'https://www.linkedin.com/in/jonathanlo411/'">
+                    <div class="pfp-wrapper">
+                        <img src="data/pfp.jpg" />
+                    </div>
+                    <h4 class="member-name">Jonathan Lo</h4>
+                    <h6 class="member-desc">Data Science</h6>
+                </div>
+        </div>
+        
+        <!-- Process Section -->
+        <div id="process">
+            
+            <div class="step" id="sec4">
+                <h3 class="heading">4. Increased Justice</h3>
+                <p>By properly following the instructions laid out, we can ensure justice in two main ways: pivotability and bias. Pivotability means that the model can be easily modified or updated when new data or feedback becomes available. This allows us to address any issues of discrimination or unfairness that may arise from the model’s predictions or decisions. For example, if we find out that the model is giving lower scores to women than men for a certain task, we can quickly pivot the model and adjust its parameters or features so that those effects are removed. Bias means that the model can be intentionally designed to favor certain demographic groups over others in order to increase justice or equity. This involves changing the model’s loss function, which is a measure of how well the model fits the data, to incorporate some form of regularization or penalty for making biased decisions. For example, if we want the model to give higher scores to minority students than majority students for a college admission test, we can add a term to the loss function that penalizes the model for giving lower scores to minority students than their actual performance. By using these two methods of pivotability and bias, we can ensure that our machine learning model is more just and fair for all groups involved.<br><br>
+                    In addition to this, the model itself is a way to increase justice. The model does this by providing more medical information towards disadvantaged groups who may have less access to quality healthcare or health education. As mentioned before, the model does not serve as a medical professional but it does provide a more indepth perspective into what could be causing their ailments based on their symptoms and history. This can help them to understand their health condition better and make informed decisions about their treatment options. For example, the model can suggest possible diagnoses for a patient who has chest pain and shortness of breath, such as heart attack, angina, or asthma. The model can also explain the risk factors and preventive measures for each condition, such as smoking cessation, exercise, or medication. By providing more medical information to disadvantaged groups, the model can empower them to take charge of their own health and well-being.
+                    </p>
+                <div class="img-wrapper"><img src="data/fig5.png" /></div>
+            </div>
+        </div>   
+
+    </div>
+    </div>
+
+    <div id="footer-spacer"></div>
+    <footer>
+        <h5>Jonathan Lo, PHIL 174: Data Ethics</h5>
+    </footer>
+    </div>
+
+    <!-- Side Nav -->
+    <div class="sidebar" id="side-nav">
+        <div class="sidebar-content" id="int" onclick="window.location.href='intro.html'">
+            <span class="material-symbols-outlined">info</span>
+            <h2>Introduction</h2>
+        </div>
+        <div class="sidebar-content" id="dat" onclick="window.location.href='data.html'">
+            <span class="material-symbols-outlined">database</span>
+            <h2>Data Collection</h2>
+        </div>
+        <div class="sidebar-content" id="vis" onclick="window.location.href='analyzing.html'">
+            <span class="material-symbols-outlined">monitoring</span>
+            <h2>Analyzing and Modeling</h2>
+        </div>
+        <div class="sidebar-content" id="ana" onclick="window.location.href='results.html'">
+            <span class="material-symbols-outlined">query_stats</span>
+            <h2>Understanding the Model Results</h2>
+        </div>
+        <div class="sidebar-content" id="con" onclick="window.location.href='justice.html'">
+            <span class="material-symbols-outlined">balance</span>
+            <h2>Increased Justice</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='revision.html'">
+            <span class="material-symbols-outlined">warning</span>
+            <h2>Cases for Revision</h2>
+        </div>
+        <div class="sidebar-content" id="fut" onclick="window.location.href='index.html'">
+            <span class="material-symbols-outlined">swap_vert</span>
+            <h2>Switch to Vertical View</h2>
+        </div>
+    </div>
+</body>
+</html>
