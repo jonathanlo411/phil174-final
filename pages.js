@@ -43,3 +43,29 @@ const animateNav = target => {
   io.observe(target)
 };
 animateNav(process)
+
+
+// Close bar after waiting a bit
+const buttons = document.getElementsByClassName("sidebar-content");
+let flagActivated = false;
+const timeThreshold = 2000;
+setTimeout(() => {
+  if (!flagActivated) {
+    flagActivated = true;
+    for (var i = 0; i < buttons.length; i ++) {
+      flagActivated = true;
+      buttons[i].children[1].style.display = "none";
+    }
+  }
+}, timeThreshold);
+
+// Add hover effects
+for (var i = 0; i < buttons.length; i ++) {
+  let bt = buttons[i]
+  bt.addEventListener("mouseover", () => {
+    bt.children[1].style.display = "block";
+  })
+  bt.addEventListener("mouseleave", () => {
+    if (flagActivated) bt.children[1].style.display = "none";
+  })
+}

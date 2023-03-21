@@ -249,16 +249,12 @@ footer h6 {
 }
 
 .sidebar .sidebar-content h2 {
-    display: none;
+    display: block;
     font-size: 19px;
     font-weight: 600;
     color: black;
     margin-left: 1vh;
     transition: 0.3s;
-}
-
-.sidebar .sidebar-content:hover h2 {
-    display: block;
 }
 
 /* The Modal (background) */

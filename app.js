@@ -80,3 +80,25 @@ window.onclick = function(event) {
 }
 
 
+// Close bar after scrolled a bit
+let flagActivated = false;
+const scrollThreshold = 500; 
+window.addEventListener('scroll', () => {
+  if (window.scrollY > scrollThreshold && !flagActivated) {
+    for (var i = 0; i < buttons.length; i ++) {
+      flagActivated = true;
+      buttons[i].children[1].style.display = "none";
+    }
+  }
+});
+
+// Add hover effects
+for (var i = 0; i < buttons.length; i ++) {
+  let bt = buttons[i]
+  bt.addEventListener("mouseover", () => {
+    bt.children[1].style.display = "block";
+  })
+  bt.addEventListener("mouseleave", () => {
+    if (flagActivated) bt.children[1].style.display = "none";
+  })
+}
