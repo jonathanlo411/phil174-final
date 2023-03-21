@@ -315,3 +315,7 @@ footer h6 {
 .modal-option img {
     max-height: 30vh;
 }
+
+#last {
+    border: 2px solid black !important;
+}
